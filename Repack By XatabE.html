@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игры By XatabE | Главная</title>
+    <style>
+        :root {
+            --bg-color: #0f0f0f;
+            --card-bg: #1a1a1a;
+            --accent: #ff8a00;
+            --text: #ffffff;
+            --sub-text: #aaaaaa;
+        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg-color); color: var(--text); margin: 0; padding: 0; }
+        header { background: linear-gradient(180deg, #222, #0f0f0f); padding: 40px 20px; text-align: center; border-bottom: 3px solid var(--accent); }
+        h1 { margin: 0; font-size: 2.5em; letter-spacing: 3px; color: var(--accent); text-transform: uppercase; }
+        .container { max-width: 1200px; margin: 30px auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 25px; padding: 0 20px; }
+        .game-card { background: var(--card-bg); border-radius: 10px; border: 1px solid #333; overflow: hidden; transition: 0.3s; position: relative; }
+        .game-card:hover { transform: scale(1.02); border-color: var(--accent); box-shadow: 0 0 15px rgba(255, 138, 0, 0.3); }
+        .game-info { padding: 20px; }
+        .game-title { font-size: 1.4em; margin: 0 0 10px 0; border-left: 4px solid var(--accent); padding-left: 10px; }
+        .tags { font-size: 0.85em; color: var(--accent); margin-bottom: 10px; font-weight: bold; }
+        .desc { font-size: 0.95em; color: var(--sub-text); line-height: 1.5; height: 65px; overflow: hidden; }
+        .requirements { font-size: 0.8em; background: #252525; padding: 10px; border-radius: 5px; margin-top: 15px; color: #ccc; }
+        .btn-dl { display: block; background: var(--accent); color: #000; text-align: center; padding: 12px; text-decoration: none; font-weight: bold; margin-top: 15px; border-radius: 5px; transition: 0.2s; }
+        .btn-dl:hover { background: #ffaa44; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Игры By XatabE</h1>
+    <p style="color: var(--sub-text);">Твой личный архив игровых новинок и классики</p>
+</header>
+
+<div class="container">
+    <!-- КАРТОЧКА: Serious Sam 3: BFE -->
+    <div class="game-card">
+        <div class="game-info">
+            <div class="tags">Action / Shooter / FPS</div>
+            <h2 class="game-title">Serious Sam 3: BFE</h2>
+            <p class="desc">Безумный олдскульный шутер. Возвращение Сэма в Египет, чтобы уничтожить орды Ментала в эпических масштабах.</p>
+            <div class="requirements">
+                <b>ОЗУ:</b> 1-4 ГБ<br>
+                <b>Место:</b> 4 ГБ<br>
+                <b>Видео:</b> GeForce 7800 / Radeon HD 2600
+            </div>
+            <a href="https://fex.net/ru/s/nlxvtpe" class="btn-dl">СКАЧАТЬ ИГРУ</a>
+        </div>
+    </div>
+
+    <!-- КАРТОЧКА: Zompiercer -->
+    <div class="game-card">
+        <div class="game-info">
+            <div class="tags">Survival / Open World / Zombies</div>
+            <h2 class="game-title">Zompiercer</h2>
+            <p class="desc">Построй свою крепость на колесах! Выживание в мире зомби на борту мощного поезда.</p>
+            <div class="requirements">
+                <b>ОЗУ:</b> 8-16 ГБ<br>
+                <b>Место:</b> 23 ГБ<br>
+                <b>Видео:</b> 4 ГБ видеопамяти
+            </div>
+            <a href="https://fex.net/ru/s/mcmnzkl" class="btn-dl">СКАЧАТЬ ИГРУ</a>
+        </div>
+    </div>
+
+    <!-- КАРТОЧКА: Left 4 Dead 2 -->
+    <div class="game-card">
+        <div class="game-info">
+            <div class="tags">Action / Co-op / Zombies</div>
+            <h2 class="game-title">Left 4 Dead 2</h2>
+            <p class="desc">Кооперативный зомби-апокалипсис. Пробейтесь через толпы зараженных вместе с друзьями в культовом шутере от Valve.</p>
+            <div class="requirements">
+                <b>ОЗУ:</b> 2 ГБ<br>
+                <b>Место:</b> 13 ГБ<br>
+                <b>Видео:</b> 256 МБ (Shader Model 3.0)
+            </div>
+            <a href="https://fex.net/ru/s/fnxcplt" class="btn-dl">СКАЧАТЬ ИГРУ</a>
+        </div>
+    </div>
+
+    <!-- КАРТОЧКА: Hotline Miami -->
+    <div class="game-card">
+        <div class="game-info">
+            <div class="tags">Action / Indie / Top-down</div>
+            <h2 class="game-title">Hotline Miami</h2>
+            <p class="desc">Ультрадинамичный экшен, пропитанный неоном и насилием. Очищай уровни от бандитов под зубодробительный синтвейв-саундтрек.</p>
+            <div class="requirements">
+                <b>ОЗУ:</b> 512 МБ<br>
+                <b>Место:</b> 250 МБ<br>
+                <b>Видео:</b> 32 МБ (OpenGL 2.0)
+            </div>
+            <!-- Сюда вставь свою ссылку на Hotline Miami -->
+            <a href="https://fex.net/ru/s/xnotknv" class="btn-dl">СКАЧАТЬ ИГРУ</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

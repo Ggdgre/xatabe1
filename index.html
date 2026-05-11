@@ -18,7 +18,7 @@
         .container { max-width: 1200px; margin: 30px auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 25px; padding: 0 20px; }
         .game-card { background: var(--card-bg); border-radius: 10px; border: 1px solid #333; overflow: hidden; transition: 0.3s; position: relative; }
         .game-card:hover { transform: scale(1.02); border-color: var(--accent); box-shadow: 0 0 15px rgba(255, 138, 0, 0.3); }
-        .game-card img { width: 100%; height: auto; display: block; }
+        .game-card img { width: 100%; height: 200px; object-fit: cover; display: block; }
         .game-info { padding: 20px; }
         .game-title { font-size: 1.4em; margin: 0 0 10px 0; border-left: 4px solid var(--accent); padding-left: 10px; }
         .tags { font-size: 0.85em; color: var(--accent); margin-bottom: 10px; font-weight: bold; }
@@ -36,103 +36,82 @@
 </header>
 
 <div class="container">
-    <!-- КАРТОЧКА: Serious Sam 3: BFE -->
+    <!-- Serious Sam 3 -->
     <div class="game-card">
         <img src="https://i.ytimg.com/vi/QRso9NXxiUo/maxresdefault.jpg" alt="Serious Sam 3">
         <div class="game-info">
             <div class="tags">Action / Shooter / FPS</div>
             <h2 class="game-title">Serious Sam 3: BFE</h2>
-            <p class="desc">Безумный олдскульный шутер. Возвращение Сэма в Египет, чтобы уничтожить орды Ментала в эпических масштабах.</p>
-            <div class="requirements">
-                <b>ОЗУ:</b> 1-4 ГБ<br>
-                <b>Место:</b> 4 ГБ<br>
-                <b>Видео:</b> GeForce 7800 / Radeon HD 2600
-            </div>
+            <p class="desc">Безумный олдскульный шутер. Возвращение Сэма в Египет, чтобы уничтожить орды Ментала.</p>
+            <div class="requirements"><b>ОЗУ:</b> 4 ГБ | <b>Место:</b> 4 ГБ</div>
             <a href="https://fex.net/ru/s/nlxvtpe" class="btn-dl">СКАЧАТЬ ИГРУ</a>
         </div>
     </div>
 
-    <!-- КАРТОЧКА: Zompiercer -->
+    <!-- Zompiercer -->
     <div class="game-card">
         <img src="https://i.ytimg.com/vi/LNpkmv78cA8/maxresdefault.jpg" alt="Zompiercer">
         <div class="game-info">
-            <div class="tags">Survival / Open World / Zombies</div>
+            <div class="tags">Survival / Open World</div>
             <h2 class="game-title">Zompiercer</h2>
-            <p class="desc">Построй свою крепость на колесах! Выживание в мире зомби на борту мощного поезда.</p>
-            <div class="requirements">
-                <b>ОЗУ:</b> 8-16 ГБ<br>
-                <b>Место:</b> 23 ГБ<br>
-                <b>Видео:</b> 4 ГБ видеопамяти
-            </div>
+            <p class="desc">Построй свою крепость на колесах! Выживание в мире зомби на борту поезда.</p>
+            <div class="requirements"><b>ОЗУ:</b> 16 ГБ | <b>Место:</b> 23 ГБ</div>
             <a href="https://fex.net/ru/s/mcmnzkl" class="btn-dl">СКАЧАТЬ ИГРУ</a>
         </div>
     </div>
 
-    <!-- КАРТОЧКА: Left 4 Dead 2 -->
+    <!-- Left 4 Dead 2 -->
     <div class="game-card">
         <img src="https://avatars.mds.yandex.net/i?id=0fee5dad6b79f4812d34eef8ba7c01e0_l-5233154-images-thumbs&n=13" alt="Left 4 Dead 2">
         <div class="game-info">
             <div class="tags">Action / Co-op / Zombies</div>
             <h2 class="game-title">Left 4 Dead 2</h2>
-            <p class="desc">Кооперативный зомби-апокалипсис. Пробейтесь через толпы зараженных вместе с друзьями в культовом шутере от Valve.</p>
-            <div class="requirements">
-                <b>ОЗУ:</b> 2 ГБ<br>
-                <b>Место:</b> 13 ГБ<br>
-                <b>Видео:</b> 256 МБ (Shader Model 3.0)
-            </div>
+            <p class="desc">Кооперативный зомби-апокалипсис. Пробейтесь через толпы зараженных вместе с друзьями.</p>
+            <div class="requirements"><b>ОЗУ:</b> 2 ГБ | <b>Место:</b> 13 ГБ</div>
             <a href="https://fex.net/ru/s/fnxcplt" class="btn-dl">СКАЧАТЬ ИГРУ</a>
         </div>
     </div>
 
-    <!-- КАРТОЧКА: Hotline Miami -->
+    <!-- Hotline Miami 1 -->
     <div class="game-card">
         <img src="https://i.ytimg.com/vi/supWeGBcSfs/maxresdefault.jpg" alt="Hotline Miami">
         <div class="game-info">
             <div class="tags">Action / Indie / Top-down</div>
             <h2 class="game-title">Hotline Miami</h2>
-            <p class="desc">Ультрадинамичный экшен, пропитанный неоном и насилием. Очищай уровни от бандитов под зубодробительный синтвейв-саундтрек.</p>
-            <div class="requirements">
-                <b>ОЗУ:</b> 512 МБ<br>
-                <b>Место:</b> 250 МБ<br>
-                <b>Видео:</b> 32 МБ (OpenGL 2.0)
-            </div>
+            <p class="desc">Ультрадинамичный экшен под зубодробительный синтвейв-саундтрек.</p>
+            <div class="requirements"><b>ОЗУ:</b> 512 МБ | <b>Место:</b> 250 МБ</div>
             <a href="https://fex.net/ru/s/xnotknv" class="btn-dl">СКАЧАТЬ ИГРУ</a>
         </div>
     </div>
 
-    <!-- КАРТОЧКА: Hotline Miami 2: Wrong Number -->
+    <!-- Hotline Miami 2 -->
     <div class="game-card">
         <img src="https://avatars.mds.yandex.net/i?id=12451473ad20ccb2e73a2c3d7dbda2df2d874e8a-10263577-images-thumbs&n=13" alt="Hotline Miami 2">
         <div class="game-info">
             <div class="tags">Action / Indie / Top-down</div>
-            <h2 class="game-title">Hotline Miami 2: Wrong Number</h2>
-            <p class="desc">Жестокий финал саги. Управляйте разными фракциями в еще более кровавом и сложном сиквеле под эпичный саундтрек.</p>
-            <div class="requirements">
-                <b>ОЗУ:</b> 1 ГБ<br>
-                <b>Место:</b> 600 МБ<br>
-                <b>Видео:</b> 256 МБ (OpenGL 2.1)
-            </div>
-            <a href="ССЫЛКА_НА_СКАЧИВАНИЕ_HOTLINE_MIAMI_2" class="btn-dl">СКАЧАТЬ ИГРУ</a>
+            <h2 class="game-title">Hotline Miami 2</h2>
+            <p class="desc">Жестокий финал саги. Еще больше крови, масок и сложного геймплея.</p>
+            <div class="requirements"><b>ОЗУ:</b> 1 ГБ | <b>Место:</b> 600 МБ</div>
+            <a href="#" class="btn-dl">СКАЧАТЬ ИГРУ</a>
         </div>
     </div>
-</div>
 
-</body>
-</html>
-
-    <!-- КАРТОЧКА: Poppy Playtime -->
+    <!-- Poppy Playtime — ТЕПЕРЬ ОНА ВНУТРИ КОНТЕЙНЕРА -->
     <div class="game-card">
         <img src="https://base-of-games.ru" alt="Poppy Playtime">
         <div class="game-info">
             <div class="tags">Horror / Puzzle / First-person</div>
             <h2 class="game-title">Poppy Playtime</h2>
-            <p class="desc">Попробуйте выжить на заброшенной фабрике игрушек. Используйте GrabPack, чтобы решать головоломки и спастись от Хагги Вагги.</p>
+            <p class="desc">Попробуйте выжить на заброшенной фабрике игрушек и спастись от Хагги Вагги.</p>
             <div class="requirements">
                 <b>ОЗУ:</b> 8 ГБ<br>
                 <b>Место:</b> 10 ГБ<br>
-                <b>Видео:</b> Nvidia GeForce GTX 1060 / Radeon RX 580
+                <b>Видео:</b> GTX 1060
             </div>
-            <a href="ССЫЛКА_НА_СКАЧИВАНИЕ_POPPY_PLAYTIME" class="btn-dl">СКАЧАТЬ ИГРУ</a>
+            <a href="#" class="btn-dl">СКАЧАТЬ ИГРУ</a>
         </div>
     </div>
+</div> <!-- Конец контейнера -->
 
+</body>
+</html>

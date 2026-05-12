@@ -16,14 +16,14 @@
         header { background: linear-gradient(180deg, #222, #0f0f0f); padding: 40px 20px; text-align: center; border-bottom: 3px solid var(--accent); }
         h1 { margin: 0; font-size: 2.5em; letter-spacing: 3px; color: var(--accent); text-transform: uppercase; }
         .container { max-width: 1200px; margin: 30px auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 25px; padding: 0 20px; }
-        .game-card { background: var(--card-bg); border-radius: 10px; border: 1px solid #333; overflow: hidden; transition: 0.3s; position: relative; }
+        .game-card { background: var(--card-bg); border-radius: 10px; border: 1px solid #333; overflow: hidden; transition: 0.3s; position: relative; display: flex; flex-direction: column; }
         .game-card:hover { transform: scale(1.02); border-color: var(--accent); box-shadow: 0 0 15px rgba(255, 138, 0, 0.3); }
         .game-card img { width: 100%; height: 200px; object-fit: cover; display: block; }
-        .game-info { padding: 20px; }
+        .game-info { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
         .game-title { font-size: 1.4em; margin: 0 0 10px 0; border-left: 4px solid var(--accent); padding-left: 10px; }
         .tags { font-size: 0.85em; color: var(--accent); margin-bottom: 10px; font-weight: bold; }
-        .desc { font-size: 0.95em; color: var(--sub-text); line-height: 1.5; height: 65px; overflow: hidden; }
-        .requirements { font-size: 0.8em; background: #252525; padding: 10px; border-radius: 5px; margin-top: 15px; color: #ccc; }
+        .desc { font-size: 0.95em; color: var(--sub-text); line-height: 1.5; height: 65px; overflow: hidden; margin-bottom: 15px; }
+        .requirements { font-size: 0.8em; background: #252525; padding: 10px; border-radius: 5px; margin-top: auto; color: #ccc; }
         .btn-dl { display: block; background: var(--accent); color: #000; text-align: center; padding: 12px; text-decoration: none; font-weight: bold; margin-top: 15px; border-radius: 5px; transition: 0.2s; }
         .btn-dl:hover { background: #ffaa44; }
     </style>
@@ -96,21 +96,30 @@
         </div>
     </div>
 
-    <!-- Poppy Playtime — ТЕПЕРЬ ОНА ВНУТРИ КОНТЕЙНЕРА -->
+    <!-- Poppy Playtime -->
     <div class="game-card">
         <img src="https://cdn1.epicgames.com/spt-assets/465c0f6c95d04b1c86b280b4925fee2d/poppy-playtime-yp725.jpg" alt="Poppy Playtime">
         <div class="game-info">
             <div class="tags">Horror / Puzzle / First-person</div>
             <h2 class="game-title">Poppy Playtime</h2>
             <p class="desc">Попробуйте выжить на заброшенной фабрике игрушек и спастись от Хагги Вагги.</p>
-            <div class="requirements">
-                <b>ОЗУ:</b> 8 ГБ<br>
-                <b>Место:</b> 10 ГБ<br>
-                <b>Видео:</b> GTX 1060
-            </div>
+            <div class="requirements"><b>ОЗУ:</b> 8 ГБ | <b>Место:</b> 10 ГБ</div>
             <a href="https://archive.org/details/poppy-playtime-by-xatab-e.zip" class="btn-dl">СКАЧАТЬ ИГРУ</a>
         </div>
     </div>
+
+    <!-- Half-Life 2 Online - Singleplayer -->
+    <div class="game-card">
+        <img src="https://ytimg.com" alt="Half-Life 2 Online">
+        <div class="game-info">
+            <div class="tags">Action / FPS / Sci-fi</div>
+            <h2 class="game-title">Half-Life 2 Online - SP</h2>
+            <p class="desc">Уникальная модификация классики. Переживите приключения Гордона Фримена с обновленным геймплеем.</p>
+            <div class="requirements"><b>ОЗУ:</b> 2 ГБ | <b>Место:</b> 5 ГБ</div>
+            <a href="#" class="btn-dl">СКАЧАТЬ ИГРУ</a>
+        </div>
+    </div>
+
 </div> <!-- Конец контейнера -->
 
 </body>
